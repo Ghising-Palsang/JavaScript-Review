@@ -1,3 +1,285 @@
+// =========== DOM ===============
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =========== Function ===============
+
+// function sum(a , b){
+//     return a + b;
+// }
+
+// console.log(sum(2,3));
+
+// function myFunction(){
+//     console.log("Hello World");
+    
+// }
+
+// myFunction(); // calling function
+
+//========================Arrow function
+//================Substraction arrow function
+// const substract = (a,b,c) =>{
+//     return a - b * c;
+// }
+
+// console.log(substract(5,1,2));
+
+
+//Exponential arrow function
+// const exponential = (x,y) => {
+//     return x ** y;
+// }
+// console.log(exponential(5,2));
+
+
+//=================Practice Question 
+//Function that finds number of vowels in a string
+
+
+// let string = "";
+// let noOfVowels = 0;
+// function countVowel(string){
+//     for(let i = 0; i < string.length; i++){
+//         if (string[i] === "a"|| string[i] === "e"|| string[i] === "i"|| string[i] === "o"|| string[i] === "u"|| string[i] === "A"|| string[i] === "E"||string[i] === "I"||string[i] === "O"||string[i] === "U") {
+//             noOfVowels++;
+//         }
+//     }
+//     return noOfVowels;
+// }
+
+// console.log(countVowel("tHewHitEBuilDingBlOckofCell"));
+
+
+//================For Each Method
+//Higher Order function => Passes another function as an argument
+//Call back function
+
+// let arr = ["kathmandu", "lalitpur","bhaktapur","pokhara"];
+
+// arr.forEach((val , idx , arr)=>{
+//     console.log(val, idx, arr);
+    
+// })
+
+
+//===============Practice question
+//Square of each value using the forEach loop.
+
+// let num = [1, 2, 3, 4, 5];
+
+// let calcSquare =(val)=>{    //Its another way to use forEach
+//     console.log(val*val);
+    
+// }
+
+// num.forEach(calcSquare);
+
+//===============Map method
+
+// const calcTripled = (val)=>{
+//     return (val ** 3);
+    
+// }
+
+// const tripledNums = num.map(calcTripled);
+// console.log(tripledNums);
+
+
+// let calcFrice = (val) =>{
+//     return val **4;
+// }
+
+// const numFriced = num.map(calcFrice);
+// console.log(numFriced);
+
+
+//========Filter Method
+//Creates an new array of elements that give true for a condition/filter
+
+// let newArr = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const filteredVal = newArr.filter((val)=>{
+//     return val%2 !== 0;  //for odd number
+// })
+
+// console.log(filteredVal);//true value are stored in New Array
+
+
+
+
+//===============Reduce Method
+//==Performs some operations & reduce the array into a single valu and returns that single value.
+
+
+// i.e. Sum of an array, avg or an array
+
+//Summing the array
+// let array = [1, 2, 3, 4, 5, 6];
+
+// const output = array.reduce((prev, curr)=>{
+//     return prev + curr;
+// })
+
+// console.log(output);
+
+//Finding the largest number
+
+// let array2 = [2, 6, 9, 3, 1, 7];
+
+// const maxNum = array2.reduce((prev, curr)=>{
+//     return prev > curr? prev : curr;
+// })
+
+// console.log(maxNum);
+
+
+
+//===============Practice Question
+
+// ======Filter out the marks of students scored 90+
+
+// let marks = [79, 92, 80, 97, 46, 90, 99];
+
+// const highMark = marks.filter((val)=>{
+//     return val > 90;
+// })
+
+// console.log(highMark);
+
+//=====Take a number n as input from user. Create an array of numbers from 1 to n.
+//Reduce to cal sum of all numbers in the array
+//Reduce to cal product of all numbers in the array
+
+// let user = prompt("Enter a Number");
+// let storage = [];
+
+// for (let i =1; i<=user;i++){
+//     storage[i-1] = i;
+    
+// };
+// console.log(storage);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // =========== Array ===============
 
 // let goals= ["finance","people","knowledge"];
@@ -106,11 +388,11 @@
 
 //Iterating over multi dimensional array
 
-let matrix = [
-    [1 ,2 ,3],
-    [4 ,5 ,6],
-    [9 ,0 ,8],
-];
+// let matrix = [
+//     [1 ,2 ,3],
+//     [4 ,5 ,6],
+//     [9 ,0 ,8],
+// ];
 
 // for (let row of matrix){
 //     for (let col of row){
@@ -165,26 +447,26 @@ let matrix = [
 //Array Methods
 
 let animes = ["Serei Gensouki","Frierin","Your Name","Naruto"];
-let movies = ["Spiderman", "Pursuit of happiness" , "Forest Gump"];
+// let movies = ["Spiderman", "Pursuit of happiness" , "Forest Gump"];
 
-console.log(animes.push("Bleach"));
-console.log(animes.unshift("One Piece"));
-console.log(animes);
-console.log(animes.shift());
-console.log(animes.pop());
+// console.log(animes.push("Bleach"));
+// console.log(animes.unshift("One Piece"));
+// console.log(animes);
+// console.log(animes.shift());
+// console.log(animes.pop());
 
-console.log(animes.toString());
-console.log(animes);
+// console.log(animes.toString());
+// console.log(animes);
 
 
 
-console.log(animes.slice(2 ,5));
-console.log(animes.concat(movies));
+// console.log(animes.slice(2 ,5));
+// console.log(animes.concat(movies));
 
-let newAnime = animes.concat(movies);
+// let newAnime = animes.concat(movies);
 
-console.log(newAnime.splice(2, 3,"NewEl")); // staring idx, how many to delete (in counts) // newEl
-console.log(newAnime);
+// console.log(newAnime.splice(2, 3,"NewEl")); // staring idx, how many to delete (in counts) // newEl
+// console.log(newAnime);
 
 let str = "New Branch Created"
 
