@@ -1,6 +1,6 @@
 // =========== Array ===============
 
-let goals= ["finance","people","knowledge"];
+// let goals= ["finance","people","knowledge"];
 
 // console.log(arr1);
 
@@ -8,100 +8,100 @@ let goals= ["finance","people","knowledge"];
 
 //for loop
 
-for(let i=0; i<goals.length;i++){
-    console.log(goals[i]);
-}
+// for(let i=0; i<goals.length;i++){
+//     console.log(goals[i]);
+// }
 
 
 //for of loop
-for(let goal of goals){
-    console.log(goal);
-}
+// for(let goal of goals){
+//     console.log(goal);
+// }
 
 //Practice Question
 
 //Find average of the array.
-let marks = [85, 97, 44, 37, 76, 60]
+// let marks = [85, 97, 44, 37, 76, 60]
 
-let sum = 0;
+// let sum = 0;
 
-for (let mark of marks) {
-    sum = sum + mark;
-}
+// for (let mark of marks) {
+//     sum = sum + mark;
+// }
 
-let avg = sum / marks.length;
-console.log(`The average mark of the class is ${avg}`);
+// let avg = sum / marks.length;
+// console.log(`The average mark of the class is ${avg}`);
 
 
 
 //Discount 10% off of the given prices
 
-let prices = [250, 645, 300, 900, 50];
+// let prices = [250, 645, 300, 900, 50];
 
-for (let i=0; i<prices.length; i++){
-    let offer = prices[i] / 10;
-    prices[i] = prices[i] - offer;
-}
+// for (let i=0; i<prices.length; i++){
+//     let offer = prices[i] / 10;
+//     prices[i] = prices[i] - offer;
+// }
 
-console.log(prices);
+// console.log(prices);
 
 
 //iterating over an array
 
-let fruits = ["apple", "mango", "pineapple","strawberry"];
+// let fruits = ["apple", "mango", "pineapple","strawberry"];
 
-for (let fruit of fruits){
-    console.log(fruit);
-}
+// for (let fruit of fruits){
+//     console.log(fruit);
+// }
 
 
-for (let i=0;i<fruits.length;i++){
-    console.log(fruits[i]);
+// for (let i=0;i<fruits.length;i++){
+//     console.log(fruits[i]);
     
-}
+// }
 
 //Searching for an item in array
 
-let groceries = ["Egg", "Chicken", "Oil", "Salt", "Bread"];
-let searchItem = "Salt";
-let found = "false";
+// let groceries = ["Egg", "Chicken", "Oil", "Salt", "Bread"];
+// let searchItem = "Salt";
+// let found = "false";
 
-for (let i=0;i<groceries.length; i++){
-    if (groceries[i] === searchItem){
-        found = true;
-        break;
-    }
-}
+// for (let i=0;i<groceries.length; i++){
+//     if (groceries[i] === searchItem){
+//         found = true;
+//         break;
+//     }
+// }
 
-console.log(found? "Found":"Not Found");
+// console.log(found? "Found":"Not Found");
 
 
 
 //Looping through an object
 
-let hobbies = {
-    n4 : "japanese",
-    singing : "guitar",
-    coding : "Income",
-    knowledge : " Finance, Communication",
-};
+// let hobbies = {
+//     n4 : "japanese",
+//     singing : "guitar",
+//     coding : "Income",
+//     knowledge : " Finance, Communication",
+// };
 
-for (let hobby in hobbies){
-    console.log(hobby ,"=",hobbies[hobby]);
-    console.log(`${hobby}:${hobbies[hobby]}`);
+// for (let hobby in hobbies){
+//     console.log(hobby ,"=",hobbies[hobby]);
+//     console.log(`${hobby}:${hobbies[hobby]}`);
     
-}
+// }
 
 
 //Generate a multiplication table for a number
 
-let num = 5;
+// let num = 5;
 
 
-for (let i = 1; i<=10;i++){
-   console.log(num * i);
+// for (let i = 1; i<=10;i++){
+//    console.log(num * i);
    
-}
+// }
 
 
 //Iterating over multi dimensional array
@@ -119,40 +119,40 @@ let matrix = [
 //     }
 // }
 
-for (let i=0; i<matrix.length;i++){
-    for (let j=0; j<matrix[i].length; j++){
-        console.log(matrix[i][j]);
+// for (let i=0; i<matrix.length;i++){
+//     for (let j=0; j<matrix[i].length; j++){
+//         console.log(matrix[i][j]);
         
-    }
-}
+//     }
+// }
 
 
 
 //Countdown Timer
-let countdown = 10;
+// let countdown = 10;
 
-while(countdown > 0){
-    console.log(countdown);
-    countdown--;
+// while(countdown > 0){
+//     console.log(countdown);
+//     countdown--;
     
-}
+// }
 
 
 //Filtering even numbers
 
-let bangos = [1, 2, 3, 4, 5, 6, 7, 8];
-let evenNumber = [];
+// let bangos = [1, 2, 3, 4, 5, 6, 7, 8];
+// let evenNumber = [];
 
-for(let bango of bangos){
-    if(bango%2 === 0){
-        evenNumber.push(bango);
-    }
-}
-console.log(evenNumber);
+// for(let bango of bangos){
+//     if(bango%2 === 0){
+//         evenNumber.push(bango);
+//     }
+// }
+// console.log(evenNumber);
 
 //Validating Input (Prompt the user until they enter a valid response)
 
-let password;
+// let password;
 
 // do{
 //     password = prompt("Enter Your password (must be at least 6 characters)")
@@ -165,8 +165,51 @@ let password;
 //Array Methods
 
 let animes = ["Serei Gensouki","Frierin","Your Name","Naruto"];
+let movies = ["Spiderman", "Pursuit of happiness" , "Forest Gump"];
 
-console.log(animes.unshift("bruh"));
+console.log(animes.push("Bleach"));
+console.log(animes.unshift("One Piece"));
+console.log(animes);
+console.log(animes.shift());
+console.log(animes.pop());
+
+console.log(animes.toString());
+console.log(animes);
+
+
+
+console.log(animes.slice(2 ,5));
+console.log(animes.concat(movies));
+
+let newAnime = animes.concat(movies);
+
+console.log(newAnime.splice(2, 3,"NewEl")); // staring idx, how many to delete (in counts) // newEl
+console.log(newAnime);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -200,6 +243,7 @@ console.log(animes.unshift("bruh"));
 
 
 //for each loop
+let goals=["finance", "mext"];
 goals.forEach(()=>{
 
 })
