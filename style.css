@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==================
+        Typography
+=====================*/
+h1{
+    font-size:3rem;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+
+
+/* ==================
+        Layout
+=====================*/
+
+.container-flex{
+    text-align: center;
+
+}
+
+.article-title{
+    margin-bottom: 0.75em;
+}
+
+
