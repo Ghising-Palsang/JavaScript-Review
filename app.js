@@ -3,8 +3,11 @@ let bdy = document.querySelector("body");
 let adt = document.querySelector(".article-DOM-title")
 let btn = document.createElement("button");
 const newDiv = document.createElement("div");
+const newImg = document.createElement("img");
+
 
 bdy.style.backgroundColor = "lightblue";
+
 
 adt.innerHTML = "Hello Sekai";
 console.log(adt.tagName);
@@ -15,10 +18,25 @@ console.log(adt.textContent);
 btn.innerText = "Hello";
 btn.style.backgroundColor = "coral";
 
-document.body.appendChild(btn);
+document.body.prepend(btn);
 
 newDiv.textContent = "This is a container";
 document.body.appendChild(newDiv);
+
+newImg.style.backgroundColor = "red";
+bdy.appendChild(newImg);
+newImg.src= "imgae.jpeg";
+
+//==============Steps for creating
+//===============Create then append/prepend/after/before
+//=============to remove=> el.remove();
+
+//Q2
+let para = document.querySelector(".article-DOM-body");
+// para.setAttribute("class","newClass");
+para.classList.add("newClass");
+
+
 
 
 
