@@ -1,4 +1,33 @@
 // =========== DOM ===============
+let bdy = document.querySelector("body");
+let adt = document.querySelector(".article-DOM-title")
+let btn = document.createElement("button");
+const newDiv = document.createElement("div");
+
+bdy.style.backgroundColor = "lightblue";
+
+adt.innerHTML = "Hello Sekai";
+console.log(adt.tagName);
+console.log(bdy.tagName);
+console.log(adt.textContent);
+// console.log(bdy.textContent);
+
+btn.innerText = "Hello";
+btn.style.backgroundColor = "coral";
+
+document.body.appendChild(btn);
+
+newDiv.textContent = "This is a container";
+document.body.appendChild(newDiv);
+
+
+
+
+
+
+
+
+
 
 
 
@@ -446,7 +475,7 @@
 
 //Array Methods
 
-let animes = ["Serei Gensouki","Frierin","Your Name","Naruto"];
+// let animes = ["Serei Gensouki","Frierin","Your Name","Naruto"];
 // let movies = ["Spiderman", "Pursuit of happiness" , "Forest Gump"];
 
 // console.log(animes.push("Bleach"));
@@ -468,7 +497,7 @@ let animes = ["Serei Gensouki","Frierin","Your Name","Naruto"];
 // console.log(newAnime.splice(2, 3,"NewEl")); // staring idx, how many to delete (in counts) // newEl
 // console.log(newAnime);
 
-let str = "New Branch Created"
+// let str = "New Branch Created";
 
 
 
