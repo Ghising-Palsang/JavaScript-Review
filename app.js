@@ -1,40 +1,114 @@
+
+// =========== Event Handling ===============
+
+const bdy = document.querySelector("body");
+const hloTitle = document.querySelector(".article-DOM-title");
+const placeHolder = document.querySelector(".article-form-placeholder");
+const form = document.querySelector(".article-form");
+const ul = document.getElementById("list");
+
+// hloTitle.addEventListener("mousemove",()=>{
+//     hloTitle.style.color = "red";
+// })
+
+hloTitle.addEventListener("mousemove",()=>{
+    hloTitle.style.color = "forestgreen";
+})
+
+placeHolder.addEventListener("change",()=>{
+    placeHolder.style.fontSize = "20px";
+    placeHolder.style.backgroundColor = "forestgreen";
+})
+
+form.addEventListener("submit",()=>{
+    placeHolder.style.backgroundColor = "red";
+})
+
+//==========Note : tagName = elName shown in uppercase in console.
+
+ul.addEventListener("click",(event)=>{
+    if(event.target.tagName.toLowerCase() === "li"){
+        console.log(`You clicked on :${event.target.textContent}`);
+        
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // =========== DOM ===============
-let bdy = document.querySelector("body");
-let adt = document.querySelector(".article-DOM-title")
-let btn = document.createElement("button");
-const newDiv = document.createElement("div");
-const newImg = document.createElement("img");
+// let bdy = document.querySelector("body");
+// let adt = document.querySelector(".article-DOM-title")
+// let btn = document.createElement("button");
+// const newDiv = document.createElement("div");
+// const newImg = document.createElement("img");
 
 
-bdy.style.backgroundColor = "lightblue";
+// bdy.style.backgroundColor = "lightblue";
 
 
-adt.innerHTML = "Hello Sekai";
-console.log(adt.tagName);
-console.log(bdy.tagName);
-console.log(adt.textContent);
-// console.log(bdy.textContent);
+// adt.innerHTML = "Hello Sekai";
+// console.log(adt.tagName);
+// console.log(bdy.tagName);
+// console.log(adt.textContent);
+// // console.log(bdy.textContent);
 
-btn.innerText = "Hello";
-btn.style.backgroundColor = "coral";
+// btn.innerText = "Hello";
+// btn.style.backgroundColor = "coral";
 
-document.body.prepend(btn);
+// document.body.prepend(btn);
 
-newDiv.textContent = "This is a container";
-document.body.appendChild(newDiv);
+// newDiv.textContent = "This is a container";
+// document.body.appendChild(newDiv);
 
-newImg.style.backgroundColor = "red";
-bdy.appendChild(newImg);
-newImg.src= "imgae.jpeg";
+// newImg.style.backgroundColor = "red";
+// bdy.appendChild(newImg);
+// newImg.src= "imgae.jpeg";
 
-//==============Steps for creating
-//===============Create then append/prepend/after/before
-//=============to remove=> el.remove();
+// //==============Steps for creating
+// //===============Create then append/prepend/after/before
+// //=============to remove=> el.remove();
 
-//Q2
-let para = document.querySelector(".article-DOM-body");
-// para.setAttribute("class","newClass");
-para.classList.add("newClass");
+// //Q2
+// let para = document.querySelector(".article-DOM-body");
+// // para.setAttribute("class","newClass");
+// para.classList.add("newClass");
 
 
 
